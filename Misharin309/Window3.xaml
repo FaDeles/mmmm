@@ -1,0 +1,70 @@
+﻿<Window x:Class="Misharin309.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Misharin309"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+           <!--Чтоб я понимал где какое окно-->
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="1">
+            <Label>
+                Вы МЕНЕДЖЕР
+            </Label>
+        </StackPanel>
+        <!--Для красивой картинки-->
+
+        <StackPanel
+            Grid.Row="0"
+            Grid.Column="0">
+
+            <Label 
+                Height="47"
+                FontSize="27"
+                FontFamily="Comic Sans MS"
+                 Background="#FFFFCC99">
+                Добро пожаловать
+            </Label>
+
+            <Label
+                Height="50"
+                FontSize="27"
+                FontFamily="Comic Sans MS"
+                 Background="#FFFFCC99">
+                в ароматный мир
+            </Label>
+
+        </StackPanel>
+
+        <!--Для иконки-->
+        <StackPanel
+            Grid.Row="0"
+            Grid.Column="2"
+            >
+            <Image
+                Source="logo.png"
+                Height="53" 
+                Width="80"
+                HorizontalAlignment="Right">
+
+            </Image>
+        </StackPanel>
+    </Grid>
+</Window>
